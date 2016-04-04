@@ -1,0 +1,119 @@
+C:/altera/91/quartus/Lab7/alu_dindex_add.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_dindex_add.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_dindex_add
+-- Compiling architecture add of alu_dindex_add
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_8bitreg.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_8bitreg.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_8bitreg
+-- Compiling architecture reg of alu_8bitreg
+
+} {} {}} C:/altera/91/quartus/Lab7/fa.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/fa.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture bhv of fa
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_lib.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_lib.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling package alu_lib
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_datapath.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_datapath.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_datapath
+-- Compiling architecture data of alu_datapath
+-- Loading entity alu_tristate
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_index.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_index.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_index
+-- Compiling architecture reg of alu_index
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_tristate.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_tristate.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity alu_tristate
+-- Compiling architecture bhv of alu_tristate
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_status_registers.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_status_registers.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package alu_lib
+-- Compiling entity alu_status_registers
+-- Compiling architecture build of alu_status_registers
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_ar.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_ar.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_ar
+-- Compiling architecture reg of alu_ar
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_stackp.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_stackp.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_stackp
+-- Compiling architecture counter of alu_stackp
+-- Loading entity alu_8bitreg
+-- Compiling architecture fix_one of alu_stackp
+-- Loading entity alu_stackp
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_adder.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_adder.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity alu_adder
+-- Compiling architecture ripple_carry of alu_adder
+-- Loading entity fa
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_addrpath.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_addrpath.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_addrpath
+-- Compiling architecture addrpath of alu_addrpath
+-- Loading entity alu_tristate
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_pcounter.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_pcounter.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_pcounter
+-- Compiling architecture counter of alu_pcounter
+-- Loading entity alu_8bitreg
+-- Compiling architecture fix_one of alu_pcounter
+-- Loading entity alu_pcounter
+
+} {} {}}

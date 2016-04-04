@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.alu_lib.all;
+
+entity alu_dindex_add is
+    port(
+        in1 : in std_logic_vector(addr_range);
+        in2 : in std_logic_vector(addr_range);
+        sel : in std_logic;
+        output  : out std_logic_vector(addr_range)
+        
+    );
+    
+end alu_dindex_add;
+
+architecture add of alu_dindex_add is;
+begin
+    process(in1, in2, sel)
+    begin
+        if(sel = '1') then
+            output <= std_logic_vector(unsigned(in1) + unsigned(in2));
+        else
+            output <= in1;
+        end if;
+    end process;
+    
+
+
+end add;

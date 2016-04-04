@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.alu_lib.all;
+
+entity small8_cpu is
+    port(
+        clk     : in std_logic;
+        rst     : in std_logic;
+        data    : in std_logic_vector(data_range);
+        output  : out std_logic_vector(data_range)        
+    );
+end small8_cpu;
+
+architecture might_possibily_work of small8_cpu is
+    signal control  : std_logic_vector(23 downto 0);
+    signal datapath_control : std_logic_vector(9 downto 0);
+    signal addr_control : std_logic_vector(3 downto 0);
+    signal addr_out     : std_logic_vector(addr_range);   
+    signal st_flags     : std_logic_vector(3 downto 0);
+begin
+    u_internal_arch  : entity work.internal_toplevel
+        port map(
+            clk     => clk,
+            rst     => rst,
+            data_in => data,
+            data_out=> output,
+            control	=> control,
+            datapath_control	=> datapath_control,
+            status_flags => st_flags,
+            addr_control => addr_control,
+            address_out => addr_out
+        );
+    u_controller      : entity work.small8_controller
+        port map(   
+            clk     => clk,
+            rst     => rst,
+            IR_in   => data,
+            status_flags    => st_flags,
+            datapath_control => datapath_control,
+            addr_control    => addr_control,
+            control         => control
+        );
+        
+end might_possibily_work;

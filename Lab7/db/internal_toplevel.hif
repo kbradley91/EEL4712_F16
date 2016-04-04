@@ -1,0 +1,856 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+10
+767
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+alu_adder
+# storage
+db|internal_toplevel.(1).cnf
+db|internal_toplevel.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_adder.vhd
+ed6476f1801cd785f9a439d974105cf2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+width
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(x)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(y)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(s)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+fa.vhd
+414aad2528077de851c46f65114801f
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+fa
+# storage
+db|internal_toplevel.(2).cnf
+db|internal_toplevel.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fa.vhd
+414aad2528077de851c46f65114801f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_testbus
+# storage
+db|internal_toplevel.(8).cnf
+db|internal_toplevel.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_testbus.vhd
+f119529205271b0bd9b4a9339427f33
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_tristate
+# storage
+db|internal_toplevel.(9).cnf
+db|internal_toplevel.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_tristate.vhd
+5cb6bd6aecab46c0b6a0331dbe7592
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+width
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(input)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu_datapath:u_datapath|alu_tristate:U_TS0
+alu_datapath:u_datapath|alu_tristate:U_TS1
+alu_datapath:u_datapath|alu_tristate:U_TS2
+alu_datapath:u_datapath|alu_tristate:U_TS3
+alu_datapath:u_datapath|alu_tristate:U_TS4
+alu_datapath:u_datapath|alu_tristate:U_ts5
+alu_datapath:u_datapath|alu_tristate:U_ts6
+alu_datapath:u_datapath|alu_tristate:U_ts7
+alu_datapath:u_datapath|alu_tristate:U_TS8
+alu_datapath:u_datapath|alu_tristate:U_TS9
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_tristate
+# storage
+db|internal_toplevel.(14).cnf
+db|internal_toplevel.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_tristate.vhd
+5cb6bd6aecab46c0b6a0331dbe7592
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+width
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(input)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu_addrpath:u_addrpath|alu_tristate:U_TS0
+alu_addrpath:u_addrpath|alu_tristate:U_TS1
+alu_addrpath:u_addrpath|alu_tristate:U_TS2
+alu_addrpath:u_addrpath|alu_tristate:U_TS3
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_status_registers
+# storage
+db|internal_toplevel.(4).cnf
+db|internal_toplevel.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_status_registers.vhd
+533b8880bd5dc977b05985be98e5da6c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_status_registers:u_statusreg
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_8bitreg
+# storage
+db|internal_toplevel.(6).cnf
+db|internal_toplevel.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_8bitreg.vhd
+f1ed81401ee1e35842b44664e7850f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_8bitreg:u_accreg
+alu_8bitreg:u_datareg
+alu_8bitreg:u_insreg
+alu_8bitreg:u_displacereg
+alu_8bitreg:u_aluout_reg
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_ar
+# storage
+db|internal_toplevel.(11).cnf
+db|internal_toplevel.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_ar.vhd
+3c9c52eeb63094433623c126717d1a8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(ar_h)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(ar_l)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_ar:u_addreg
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_datapath
+# storage
+db|internal_toplevel.(12).cnf
+db|internal_toplevel.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_datapath.vhd
+7a185a28fdd4d5bbf73e71874e5f5c4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(in0)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in2)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in3)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in4)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in5)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in6)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in7)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in8)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in9)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(en_v)
+9 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+alu_tristate.vhd
+5cb6bd6aecab46c0b6a0331dbe7592
+}
+# hierarchies {
+alu_datapath:u_datapath
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_addrpath
+# storage
+db|internal_toplevel.(13).cnf
+db|internal_toplevel.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_addrpath.vhd
+174e6b658927e73646bcf9993cc96b1b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(in0)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(in1)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(in2)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(in3)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(en_v)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+alu_tristate.vhd
+5cb6bd6aecab46c0b6a0331dbe7592
+}
+# hierarchies {
+alu_addrpath:u_addrpath
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_small8
+# storage
+db|internal_toplevel.(3).cnf
+db|internal_toplevel.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_small8.vhd
+5ed3641e119f6936bc2c3f3788c1d4f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(in1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(in2)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(control)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_small8:u_alu
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_pcounter
+# storage
+db|internal_toplevel.(5).cnf
+db|internal_toplevel.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_pcounter.vhd
+a9f31b1fd5392574ee15a699967d417
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(pch_out)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(pcl_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_8bitreg.vhd
+f1ed81401ee1e35842b44664e7850f8
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_pcounter:u_pcounter
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_stackp
+# storage
+db|internal_toplevel.(7).cnf
+db|internal_toplevel.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_stackp.vhd
+b27f47f0c3d524564e892e711e397c85
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(sph_out)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(spl_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_8bitreg.vhd
+f1ed81401ee1e35842b44664e7850f8
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_stackp:u_stackpointer
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_index
+# storage
+db|internal_toplevel.(10).cnf
+db|internal_toplevel.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_index.vhd
+f69ec922c44f6e1ba0e29f2f7db697
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(x_h)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(x_l)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_index:u_indexreg
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu_dindex_add
+# storage
+db|internal_toplevel.(15).cnf
+db|internal_toplevel.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu_dindex_add.vhd
+2fbc5c396ab8d210142575b3799ed2b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(in1)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(in2)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+}
+# hierarchies {
+alu_dindex_add:u_displaceindex_add
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+internal_toplevel
+# storage
+db|internal_toplevel.(0).cnf
+db|internal_toplevel.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+internal_toplevel.vhd
+3b829581b9bb21e7db6561d5deb2dd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+alu_tristate.vhd
+5cb6bd6aecab46c0b6a0331dbe7592
+alu_dindex_add.vhd
+2fbc5c396ab8d210142575b3799ed2b
+alu_datapath.vhd
+7a185a28fdd4d5bbf73e71874e5f5c4
+alu_status_registers.vhd
+533b8880bd5dc977b05985be98e5da6c
+alu_ar.vhd
+3c9c52eeb63094433623c126717d1a8
+alu_addrpath.vhd
+174e6b658927e73646bcf9993cc96b1b
+alu_stackp.vhd
+b27f47f0c3d524564e892e711e397c85
+alu_pcounter.vhd
+a9f31b1fd5392574ee15a699967d417
+alu_small8.vhd
+5ed3641e119f6936bc2c3f3788c1d4f
+alu_8bitreg.vhd
+f1ed81401ee1e35842b44664e7850f8
+alu_lib.vhd
+e4da28906bea2272ba0d3ddb1747fc3
+alu_index.vhd
+f69ec922c44f6e1ba0e29f2f7db697
+}
+# hierarchies {
+|
+}
+# lmf
+|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

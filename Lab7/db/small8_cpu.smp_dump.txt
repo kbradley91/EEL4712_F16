@@ -1,0 +1,13 @@
+
+State Machine - |small8_cpu|small8_controller:u_controller|state
+Name state.state2 state.EXE_ADCR2 state.EXE_ADCR state.EXE_LDAD state.EXE_LDAA3 state.EXE_LDAA2 state.EXE_LDAA state.EXE_LDAI state.FETCH state.init 
+state.init 0 0 0 0 0 0 0 0 0 0 
+state.FETCH 0 0 0 0 0 0 0 0 1 1 
+state.EXE_LDAI 0 0 0 0 0 0 0 1 0 1 
+state.EXE_LDAA 0 0 0 0 0 0 1 0 0 1 
+state.EXE_LDAA2 0 0 0 0 0 1 0 0 0 1 
+state.EXE_LDAA3 0 0 0 0 1 0 0 0 0 1 
+state.EXE_LDAD 0 0 0 1 0 0 0 0 0 1 
+state.EXE_ADCR 0 0 1 0 0 0 0 0 0 1 
+state.EXE_ADCR2 0 1 0 0 0 0 0 0 0 1 
+state.state2 1 0 0 0 0 0 0 0 0 1 

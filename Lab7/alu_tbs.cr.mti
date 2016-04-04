@@ -1,0 +1,26 @@
+C:/altera/91/quartus/Lab7/alu_small8.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_small8.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_small8
+-- Compiling architecture try of alu_small8
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_lib.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_lib.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling package alu_lib
+
+} {} {}} C:/altera/91/quartus/Lab7/alu_tbalu.vhd {1 {vcom -work work -2002 -explicit C:/altera/91/quartus/Lab7/alu_tbalu.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package alu_lib
+-- Compiling entity alu_tbalu
+-- Compiling architecture tb of alu_tbalu
+-- Loading entity alu_small8
+
+} {} {}}

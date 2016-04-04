@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Apr 02 23:20:48 2016
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : internal_toplevel
+Top-level Entity Name : internal_toplevel
+Family : Cyclone III
+Total logic elements : 420
+    Total combinational functions : 380
+    Dedicated logic registers : 105
+Total registers : 105
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

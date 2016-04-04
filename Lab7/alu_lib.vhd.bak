@@ -1,0 +1,25 @@
+--Kyle Bradley
+--package for small8 project
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+package alu_lib is
+
+    constant    ADDR_WIDTH : integer := 16;
+    subtype     addr_range is natural range addr_width-1 downto 0;
+    constant    data_width : integer := 8;
+    subtype     data_range is natural range data_width-1 downto 0;
+    
+    constant    c_add   : bit_vector(0 to 7) := x"01";
+    constant    c_sub   : bit_vector(0 to 7) := x"11";
+    constant    c_and   : bit_vector(0 to 7) := x"21";
+    constant    c_or    : bit_vector(0 to 7) := x"31";
+    constant    c_xor   : bit_vector(0 to 7) := x"41";
+    constant    c_sll   : bit_vector(0 to 7) := x"51";
+    constant    c_srl   : bit_vector(0 to 7) := x"61";
+    constant    c_rlc   : bit_vector(0 to 7) := x"52";
+    constant    c_rrc   : bit_vector(0 to 7) := x"62";
+    
+    
+end alu_lib;

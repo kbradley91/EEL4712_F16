@@ -1,0 +1,77 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+use ieee.numeric_std.all;
+
+use work.alu_lib.all;
+
+entity alu_stackp is
+    port(
+        --control signals
+        clk     : in std_logic;
+        rst     : in std_logic;
+        sph_ld  : in std_logic;
+        spl_ld  : in std_logic;
+        sp_dec  : in std_logic;
+        
+        --bus signals
+        data_in : in std_logic_vector(data_range);
+        sph_out : out std_logic_vector(7 downto 0);
+        spl_out : out std_logic_vector(7 downto 0)
+    );
+    
+end alu_stackp;
+
+architecture counter of alu_stackp is
+    signal sph_in, spl_in  : std_logic_vector(7 downto 0);
+    
+begin
+	
+   u_spl    : entity work.alu_8bitreg
+        port map(
+            clk => clk,
+            rst => rst,
+            en  => spl_ld,
+            data_in => data_in,
+            output => spl_out
+        
+        );
+    u_sph   : entity work.alu_8bitreg
+        port map(
+            clk => clk,
+            rst => rst,
+            en  => sph_ld,
+            data_in =>  data_in,
+            output  => sph_out
+        
+        );
+   
+   
+
+end counter;
+
+
+architecture fix_one of alu_stackp is
+    
+    begin
+    process(rst,clk)
+        variable out_temp : std_logic_vector(15 downto 0);
+    begin
+        if(rst = '1') then
+            sph_out <= (others => '0');
+            spl_out <= (others => '0');
+            out_temp := (others => '0');
+        elsif(rising_edge(clk)) then
+            if(sph_ld = '1') then
+                out_temp(15 downto 8) := data_in;
+            elsif(spl_ld = '1') then
+                out_temp(7 downto 0) := data_in;
+            elsif(sp_dec = '1') then
+                out_temp := std_logic_vector(unsigned(out_temp)-1);
+            end if;
+            sph_out <= out_temp(15 downto 8);
+            spl_out <= out_temp(7 downto 0);
+        end if;
+        
+    end process;
+end fix_one;

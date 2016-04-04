@@ -1,0 +1,77 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.alu_lib.all;
+
+entity alu_pcounter is
+    port(
+        --control signals
+        clk     : in std_logic;
+        rst     : in std_logic;
+        pch_ld  : in std_logic;
+        pcl_ld  : in std_logic;
+        pc_inc : in std_logic;
+        
+        --bus signals
+        data_in : in std_logic_vector(data_range);
+        pch_out : out std_logic_vector(7 downto 0);
+        pcl_out : out std_logic_vector(7 downto 0)
+    );
+    
+end alu_pcounter;
+
+architecture counter of alu_pcounter is
+    signal pcl_in, pch_in : std_logic_vector(7 downto 0);
+    signal test1, test2 : std_logic_vector(7 downto 0);
+    
+begin
+   u_pcl    : entity work.alu_8bitreg
+        port map(
+            clk => clk,
+            rst => rst,
+            en  => pcl_ld,
+            data_in => pcl_in,
+            output => test1
+        
+        );
+    u_pch   : entity work.alu_8bitreg
+        port map(
+            clk => clk,
+            rst => rst,
+            en  => pch_ld,
+            data_in =>  pch_in,
+            output  => test2;
+        
+        );
+        
+    process(pch_ld, pcl_ld, pc_inc)
+        variable pch_count, pcl_count : std_logic_vector(7 downto 0);
+    begin
+        if(pch_ld = '1') then
+            pch_count := data_in;
+        elsif(pcl_ld = '1') then
+            pcl_count := data_in;
+            
+        elsif(pc_inc = '1') then
+            if(pcl_count = x"FF") then
+                pch_count := std_logic_vector(unsigned(test2) + 1);
+            end if;
+            pcl_count := std_logic_vector(unsigned(test1) + 1);
+            
+        else
+            pch_count <= test2;
+            pcl_count <= test1;
+        end if;    
+        pcl_in <= pcl_count;
+        pch_in <= pch_count;
+       
+    
+    end process;
+    pch_out <= test2;
+    pcl_out <= test1;
+    
+   
+   
+   
+
+end counter;
